@@ -7,7 +7,8 @@
 
 ## Communication Contract
 1. Requesting Data
-To request data from the microservice, make an HTTP GET request to: http://127.0.0.1:5001/shuffle?length={length}
+To request data from the microservice, make an HTTP GET request to:
+http://127.0.0.1:5001/shuffle?length={length}
 
 Example call using Python 'requests':
 url = f"http://127.0.0.1:5001/shuffle?length={length}"
