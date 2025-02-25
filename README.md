@@ -8,9 +8,11 @@
 ## Communication Contract
 1. Requesting Data
 To request data from the microservice, make an HTTP GET request to:
+
 http://127.0.0.1:5001/shuffle?length={length}
 
 Example call using Python 'requests':
+
 url = f"http://127.0.0.1:5001/shuffle?length={length}"
 response = requests.get(url)
 
@@ -18,6 +20,7 @@ response = requests.get(url)
 The microservice responds with a list of shuffled integers in JSON format
 
 Example call:
+
     ....
     return response.json()["shuffled_numbers"]
 
@@ -25,6 +28,7 @@ shuffled_numbers = get_shuffled_numbers(10)
 print("Shuffled Numbers:", shuffled_numbers)
 
 Response:
+
 <img width="643" alt="Screenshot 2025-02-24 at 5 43 58 PM" src="https://github.com/user-attachments/assets/66da0af6-2877-4a0b-a81c-f0aeb1970dff" />
 
 3. UML
